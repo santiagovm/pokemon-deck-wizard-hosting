@@ -1,5 +1,6 @@
 variable "do_token" {}
 
 provider "digitalocean" {
-  token = "${var.do_token}"
+  version = "~> 1.15"
+  token = var.do_token
 }
