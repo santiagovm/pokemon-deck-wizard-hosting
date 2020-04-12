@@ -22,5 +22,5 @@ resource "digitalocean_kubernetes_cluster" "pokemon-deck-wizard-k8s-cluster" {
 resource "digitalocean_project" "pokemon-deck-wizard-project" {
   name = "pokemon-deck-wizard-project"
   description = "Project to group resources related to the Pokemon Deck Wizard Application"
-  resources = [digitalocean_kubernetes_cluster.pokemon-deck-wizard-k8s-cluster.id]
+  resources = [digitalocean_kubernetes_cluster.pokemon-deck-wizard-k8s-cluster.urn]
 }
